@@ -85,7 +85,7 @@ app.get("/",function(req,res){
         
     
     day=date.getdate()
-    res.render("list1",{current:day,newitems:newitems});
+    res.render("list1",{current:day,newitems:newitems,length:newitems.length});
 })
     
 })
@@ -110,7 +110,7 @@ app.get("/:listname",function(req,res){
             else
             {
                 console.log("Existds")
-                res.render("list1",{current:ln,newitems:foundlist.items})
+                res.render("list1",{current:ln,newitems:foundlist.items,length:foundlist.items.length})
             }
 
         }
