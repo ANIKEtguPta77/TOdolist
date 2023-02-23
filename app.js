@@ -183,6 +183,6 @@ else{
 
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT||4000,()=>{
     console.log("Sever is running on port 3000");
 });
