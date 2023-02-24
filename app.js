@@ -2,6 +2,7 @@ const express=require("express")
 const https=require("https")
 const body=require("body-parser");
 const mongoose=require("mongoose");
+const ejs=require("ejs);
 const app=express();
 app.use(body.urlencoded({extended:true}));
 app.use(express.static("public"));
